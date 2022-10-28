@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./source/css/style.css">
+    <link rel="shortcut icon" href="./source/img/logo.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- display intro -->
+        <div class="display-intro screen">
+            <img src="./source/img/logo.png" alt="" class="logo-intro">
+            <div class="game-instruction">
+                <div class="header">game instruction</div>
+                <p>>> Before entering the game arena, please fill in your username first</p>
+                <p>>> You will win if your score exceeds your opponent's score</p>
+            </div>
+            <div class="intro-wrapp">
+                <input type="text" class="username" placeholder="Username" autofocus>
+                
+                <select name="" id="" class="enemy">
+                    <option selected disabled>enemy</option>
+                    <option value="player2" disabled>Player 2</option>
+                    <option value="bot">Bot</option>
+                </select>
+                <input type="text" class="player-2" placeholder="Player 2 name" autofocus>
+                <select name="" id="" class="enemy-bot">
+                    <option selected>auto</option>
+                    <option value="easy" disabled>easy</option>
+                    <option value="medium" disabled>medium</option>
+                    <option value="hard" disabled>hard</option>
+                </select>
+                <div class="btn-play">Play</div>
+            </div>
+        </div>
+        <!-- display game -->
+        <div class="display-game screen">
+
+            <div class="winners">
+                <div class="header-winner">the winners!</div>
+                <div class="winner-player">Player</div>
+                <div class="winner-score">scores : <span class="total-score">0</span></div>
+            </div>
+
+
+            <img src="./source/img/logo.png" class="logo" alt="">
+            <div class="game">
+                
+
+            </div>
+            <!-- score and current -->
+            <div class="wrapp">
+                <div class="current">
+                    current :  
+                    <div class="turn">
+                        19
+                    </div>
+                </div>
+                <div class="score">
+                    <div class="player-score-wrapp">
+                       <div class="player-score-color"></div>  <span id="name">player</span>  
+                       <div class="player-score">0</div>
+                    </div>
+                    <div class="bot-score-wrapp">
+                       <div class="bot-score-color"></div>  bot 
+                       <div class="bot-score">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="leaderboard">
+                <div class="header-lead">leaderboard</div>
+                <div class="date">
+                    <label for="date">Sort by :</label>
+                    <select name="" id="date">
+                        <option value="">date</option>
+                    </select>
+                </div>
+                <div class="history">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="./source/js/intro.js"></script>
+    <script src="./source/js/cell.js"></script>
+    <script src="./source/js/honeys.js"></script>
+    <script src="./source/js/game.js"></script>
+    <script src="./source/js/hexaria.js"></script>
+</body>
+</html>

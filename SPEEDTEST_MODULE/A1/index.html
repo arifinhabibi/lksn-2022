@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        nav {
+        display: flex;
+        justify-content:space-between; 
+        align-items: center;
+        padding: 1rem 2rem;
+        background: #003044; 
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+        }
+
+        nav ul {
+        display: flex;
+        list-style: none; 
+        }
+
+        nav li {
+        padding-left: 1rem; 
+        }
+
+        nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+            margin-right: 40px;
+        }
+        section {
+            width: 100%;
+            height: 700px;
+            background-color: rgb(187, 187, 187);
+            background-image: url(./hero-section.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .heading {
+            color: #fff;
+            position: absolute;
+            margin: auto;
+            top: 40%;
+            left: 10%;
+            right: 10%;
+        }
+        .heading p {
+          font-size: 24px
+        }
+        .header {
+            font-size: 50px;
+        }
+        /* 
+        Extra small devices (phones, 600px and down) 
+        */
+        @media only screen and (max-width: 600px) {
+        nav {
+            flex-direction: column;
+        }
+        nav ul {
+            flex-direction: column;
+            padding-top: 0.5rem;
+        }
+        nav li {
+            padding: 0.5rem 0;
+        }
+        } 
+
+    </style>
+</head>
+<body>
+    <!-- logo -->
+    <!-- navigation bar -->
+    <!-- menu with dropdown -->
+    <nav>
+        <img src="./logo.png" class="logo" alt="">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sport</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+
+
+    <!-- hero section with heading text -->
+    <!-- call to action (CTA). -->
+    <section>
+        <div class="heading">
+            <div class="header">Football Club Company</div>
+            <p>"Go guys! Make us proud, we believe in you"</p>
+        </div>
+    </section>
+</body>
+</html>

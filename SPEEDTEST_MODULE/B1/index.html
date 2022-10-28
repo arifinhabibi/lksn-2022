@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /* background-color: black; */
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 960px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            /* grid-template-rows: repeat(15, 1fr); */
+            grid-gap: 20px;
+        }
+        .row1col1 {
+            background-color: grey;
+            grid-column-end: span 4;
+            grid-row-end: span 16;
+            width: 100%;
+            height: 100%;
+        }
+        .row1col2 {
+            background-color: grey;
+            grid-column-end: span 4;
+            grid-row-end: span 8;
+            width: 100%;
+            height: 100%;
+        }   
+        .row1col3 {
+            background-color: grey;
+            grid-column-end: span 4;
+            grid-row-end: span 10;
+            width: 100%;
+            height: 100%;
+        } 
+        .row2col2 {
+            background-color: grey;
+            grid-column-end: span 4;
+            grid-row-end: span 16;
+            width: 100%;
+            height: 100%;
+        } 
+        .row2col3 {
+            background-color: grey;
+            grid-column-end: span 4;
+            grid-row-end: span 8;
+            width: 100%;
+            height: 100%;
+        } 
+        .row2col1 {
+            background-color: grey;
+            grid-column-end: span 4;
+            grid-row-end: span 8;
+            width: 100%;
+            height: 100%;
+        }
+        .row3col1 {
+            background-color: grey;
+            grid-column-end: span 4;
+            grid-row-end: span 16;
+            width: 100%;
+            height: 100%;
+        }
+        .row3col2 {
+            background-color: grey;
+            grid-column-end: span 4;
+            grid-row-end: span 10;
+            width: 100%;
+            height: 100%;
+        }
+        .row3col3 {
+            background-color: grey;
+            grid-column-end: span 4;
+            grid-row-end: span 10;
+            width: 100%;
+            height: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="row1col1"></div>
+            <div class="row1col2"></div>
+            <div class="row1col3"></div>
+            <div class="row2col2"></div>
+            <div class="row2col3"></div>
+            <div class="row2col1"></div>
+            <div class="row3col1"></div>
+            <div class="row3col2"></div>
+            <div class="row3col3"></div>
+        </div>
+    </div>
+</body>
+</html>

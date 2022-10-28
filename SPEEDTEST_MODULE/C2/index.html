@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            width: 1000px;
+            height: 600px;
+            background-color: black;
+        }
+        .image-grayscale {
+           
+            filter: grayscale(100%);
+            position: absolute;
+            width: 1000px;
+            height: 600px;
+        } 
+        .image-ori {
+            clip: rect(0px, 1000px, 600px, 500px);
+            position: absolute;
+            width: 1000px;
+            height: 600px;
+        }
+        .slider {
+        -webkit-appearance: none;
+        width: 1000px;
+        height: 25px;
+        background: none;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        }
+
+        .slider:hover {
+        opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 5px;
+        height: 600px;
+        background: #ffffff;
+        cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./image.webp" class="image-grayscale" alt="">
+        <img src="./image.webp" class="image-ori" alt="">
+       
+        <input type="range" min="1" max="1000" value="500" class="slider">
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
